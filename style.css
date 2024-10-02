@@ -1,0 +1,71 @@
+body {
+    background-image: url('img/img.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.89);
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#board {
+    width: 50%;
+}
+
+h1 {
+    color: white;
+}
+
+#turns {
+    display: flex;
+    flex-direction: column;
+}
+
+#turns>input,
+#turns>button {
+    margin: 8px;
+    height: 50px;
+    font-size: 25px;
+}
+
+#turns>div,
+#players_turn {
+    margin: 12px;
+    height: 50px;
+    font-size: 32px;
+    padding: 12px;
+}
+
+#players_turn {
+    padding: 0px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#players_turn>div {
+    background-color: beige;
+    margin: 0px 12px;
+    border: 1.5px solid grey;
+}
+
+#result {
+    background-color: beige;
+}
+
+.case {
+    border: 1px solid white;
+    text-align: center;
+}
+
+img {
+    height: 97%;
+    width: 99%;
+    object-fit: cover;
+}
